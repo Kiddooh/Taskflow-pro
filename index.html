@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow Pro - Enterprise Project Management</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <nav id="main-nav" class="navbar">
+            <div class="nav-brand">
+                <h1>TaskFlow Pro</h1>
+            </div>
+            <div class="nav-links">
+                <a href="#dashboard" class="nav-link active">Dashboard</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#calendar" class="nav-link">Calendar</a>
+                <a href="#reports" class="nav-link">Reports</a>
+            </div>
+            <div class="nav-user">
+                <div class="user-menu" id="userMenu">
+                    <img src="" alt="User" class="user-avatar" id="userAvatar">
+                    <span class="user-name" id="userName">Loading...</span>
+                </div>
+            </div>
+        </nav>
 
+        <!-- Main Content Area -->
+        <main id="main-content" class="main-content">
+            <div id="page-container" class="page-container">
+                <!-- Dynamic content loads here -->
+                <div id="loading-screen" class="loading-screen">
+                    <div class="loading-spinner"></div>
+                    <p>Loading TaskFlow Pro...</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Modal System -->
+        <div id="modal-system" class="modal-system"></div>
+
+        <!-- Notification System -->
+        <div id="notification-container" class="notification-container"></div>
+
+        <!-- Offline Indicator -->
+        <div id="offline-indicator" class="offline-indicator hidden">
+            You are currently offline
+        </div>
+    </div>
+
+    <!-- JavaScript Modules -->
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
